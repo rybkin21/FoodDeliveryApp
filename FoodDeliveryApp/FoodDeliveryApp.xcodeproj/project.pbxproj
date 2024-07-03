@@ -12,6 +12,7 @@
 		B49F41F12C3466BE00F06455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F41F02C3466BE00F06455 /* ViewController.swift */; };
 		B49F41F62C3466C000F06455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49F41F52C3466C000F06455 /* Assets.xcassets */; };
 		B49F41F92C3466C000F06455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49F41F72C3466C000F06455 /* LaunchScreen.storyboard */; };
+		B49F42032C359FE900F06455 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = B49F42022C359FE900F06455 /* Roboto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B49F41F52C3466C000F06455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49F41F82C3466C000F06455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49F41FA2C3466C000F06455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49F42022C359FE900F06455 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../../../Downloads/Roboto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B49F41EB2C3466BE00F06455 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				B49F42002C359FCA00F06455 /* Resourses */,
 				B49F41EC2C3466BE00F06455 /* AppDelegate.swift */,
 				B49F41EE2C3466BE00F06455 /* SceneDelegate.swift */,
 				B49F41F02C3466BE00F06455 /* ViewController.swift */,
@@ -62,6 +65,22 @@
 				B49F41FA2C3466C000F06455 /* Info.plist */,
 			);
 			path = FoodDeliveryApp;
+			sourceTree = "<group>";
+		};
+		B49F42002C359FCA00F06455 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42012C359FD500F06455 /* Fonts */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		B49F42012C359FD500F06455 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42022C359FE900F06455 /* Roboto */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +143,7 @@
 			files = (
 				B49F41F92C3466C000F06455 /* LaunchScreen.storyboard in Resources */,
 				B49F41F62C3466C000F06455 /* Assets.xcassets in Resources */,
+				B49F42032C359FE900F06455 /* Roboto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
