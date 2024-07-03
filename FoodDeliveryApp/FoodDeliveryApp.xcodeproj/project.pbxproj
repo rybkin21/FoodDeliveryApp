@@ -26,6 +26,8 @@
 		B49F421F2C35A66F00F06455 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49F42122C35A66F00F06455 /* Roboto-Bold.ttf */; };
 		B49F42202C35A66F00F06455 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49F42132C35A66F00F06455 /* Roboto-Thin.ttf */; };
 		B49F42212C35A66F00F06455 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49F42142C35A66F00F06455 /* Roboto-Black.ttf */; };
+		B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42222C35A78700F06455 /* UIColor+Extension.swift */; };
+		B49F42252C35AA5600F06455 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42242C35AA5600F06455 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		B49F42122C35A66F00F06455 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B49F42132C35A66F00F06455 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B49F42142C35A66F00F06455 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		B49F42222C35A78700F06455 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B49F42242C35AA5600F06455 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				B49F42042C35A12F00F06455 /* Extensions */,
 				B49F42012C359FD500F06455 /* Fonts */,
+				B49F42242C35AA5600F06455 /* AppColors.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B49F42052C35A14E00F06455 /* UIFont+Extension.swift */,
+				B49F42222C35A78700F06455 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 				B49F41F12C3466BE00F06455 /* ViewController.swift in Sources */,
 				B49F41ED2C3466BE00F06455 /* AppDelegate.swift in Sources */,
 				B49F42062C35A14E00F06455 /* UIFont+Extension.swift in Sources */,
+				B49F42252C35AA5600F06455 /* AppColors.swift in Sources */,
 				B49F41EF2C3466BE00F06455 /* SceneDelegate.swift in Sources */,
+				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
