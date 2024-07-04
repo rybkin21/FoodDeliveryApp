@@ -28,6 +28,14 @@
 		B49F42212C35A66F00F06455 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49F42142C35A66F00F06455 /* Roboto-Black.ttf */; };
 		B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42222C35A78700F06455 /* UIColor+Extension.swift */; };
 		B49F42252C35AA5600F06455 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42242C35AA5600F06455 /* AppColors.swift */; };
+		B49F422A2C36A73300F06455 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42292C36A73300F06455 /* Coordinator.swift */; };
+		B49F422C2C36AB9800F06455 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F422B2C36AB9800F06455 /* AppCoordinator.swift */; };
+		B49F422E2C36AC4800F06455 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F422D2C36AC4800F06455 /* OnboardingCoordinator.swift */; };
+		B49F42302C36B8F800F06455 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F422F2C36B8F800F06455 /* HomeCoordinator.swift */; };
+		B49F42322C36B93600F06455 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42312C36B93600F06455 /* OrderCoordinator.swift */; };
+		B49F42342C36B94F00F06455 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42332C36B94F00F06455 /* ListCoordinator.swift */; };
+		B49F42362C36B96900F06455 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42352C36B96900F06455 /* ProfileCoordinator.swift */; };
+		B49F42382C36B99200F06455 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42372C36B99200F06455 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		B49F42142C35A66F00F06455 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		B49F42222C35A78700F06455 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B49F42242C35AA5600F06455 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		B49F42292C36A73300F06455 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B49F422B2C36AB9800F06455 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B49F422D2C36AC4800F06455 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		B49F422F2C36B8F800F06455 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B49F42312C36B93600F06455 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		B49F42332C36B94F00F06455 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		B49F42352C36B96900F06455 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		B49F42372C36B99200F06455 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 		B49F41EB2C3466BE00F06455 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				B49F42262C36A6E000F06455 /* NavigationLayer */,
 				B49F42002C359FCA00F06455 /* Resourses */,
 				B49F41EC2C3466BE00F06455 /* AppDelegate.swift */,
 				B49F41EE2C3466BE00F06455 /* SceneDelegate.swift */,
@@ -143,6 +160,37 @@
 			);
 			name = Roboto;
 			path = ../../../../../../../Downloads/Roboto;
+			sourceTree = "<group>";
+		};
+		B49F42262C36A6E000F06455 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42282C36A71100F06455 /* Coordinators */,
+				B49F42272C36A70700F06455 /* Controllers */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		B49F42272C36A70700F06455 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42372C36B99200F06455 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B49F42282C36A71100F06455 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42292C36A73300F06455 /* Coordinator.swift */,
+				B49F422B2C36AB9800F06455 /* AppCoordinator.swift */,
+				B49F422D2C36AC4800F06455 /* OnboardingCoordinator.swift */,
+				B49F422F2C36B8F800F06455 /* HomeCoordinator.swift */,
+				B49F42312C36B93600F06455 /* OrderCoordinator.swift */,
+				B49F42332C36B94F00F06455 /* ListCoordinator.swift */,
+				B49F42352C36B96900F06455 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +280,16 @@
 				B49F41ED2C3466BE00F06455 /* AppDelegate.swift in Sources */,
 				B49F42062C35A14E00F06455 /* UIFont+Extension.swift in Sources */,
 				B49F42252C35AA5600F06455 /* AppColors.swift in Sources */,
+				B49F422E2C36AC4800F06455 /* OnboardingCoordinator.swift in Sources */,
+				B49F422C2C36AB9800F06455 /* AppCoordinator.swift in Sources */,
+				B49F42322C36B93600F06455 /* OrderCoordinator.swift in Sources */,
 				B49F41EF2C3466BE00F06455 /* SceneDelegate.swift in Sources */,
+				B49F42362C36B96900F06455 /* ProfileCoordinator.swift in Sources */,
+				B49F42342C36B94F00F06455 /* ListCoordinator.swift in Sources */,
+				B49F42302C36B8F800F06455 /* HomeCoordinator.swift in Sources */,
+				B49F42382C36B99200F06455 /* TabBarController.swift in Sources */,
 				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
+				B49F422A2C36A73300F06455 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
