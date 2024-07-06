@@ -36,6 +36,9 @@
 		B49F42342C36B94F00F06455 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42332C36B94F00F06455 /* ListCoordinator.swift */; };
 		B49F42362C36B96900F06455 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42352C36B96900F06455 /* ProfileCoordinator.swift */; };
 		B49F42382C36B99200F06455 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42372C36B99200F06455 /* TabBarController.swift */; };
+		B49F423B2C37009000F06455 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423A2C37008F00F06455 /* OnboardingViewController.swift */; };
+		B49F423E2C3700F600F06455 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */; };
+		B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		B49F42332C36B94F00F06455 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		B49F42352C36B96900F06455 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		B49F42372C36B99200F06455 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B49F423A2C37008F00F06455 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		B49F41EB2C3466BE00F06455 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				B49F42392C36FFDC00F06455 /* UILayer */,
 				B49F42262C36A6E000F06455 /* NavigationLayer */,
 				B49F42002C359FCA00F06455 /* Resourses */,
 				B49F41EC2C3466BE00F06455 /* AppDelegate.swift */,
@@ -191,6 +198,24 @@
 				B49F42352C36B96900F06455 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B49F42392C36FFDC00F06455 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				B49F423C2C3700B200F06455 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		B49F423C2C3700B200F06455 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B49F423A2C37008F00F06455 /* OnboardingViewController.swift */,
+				B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */,
+				B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,12 +308,15 @@
 				B49F422E2C36AC4800F06455 /* OnboardingCoordinator.swift in Sources */,
 				B49F422C2C36AB9800F06455 /* AppCoordinator.swift in Sources */,
 				B49F42322C36B93600F06455 /* OrderCoordinator.swift in Sources */,
+				B49F423B2C37009000F06455 /* OnboardingViewController.swift in Sources */,
 				B49F41EF2C3466BE00F06455 /* SceneDelegate.swift in Sources */,
 				B49F42362C36B96900F06455 /* ProfileCoordinator.swift in Sources */,
 				B49F42342C36B94F00F06455 /* ListCoordinator.swift in Sources */,
 				B49F42302C36B8F800F06455 /* HomeCoordinator.swift in Sources */,
 				B49F42382C36B99200F06455 /* TabBarController.swift in Sources */,
+				B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */,
 				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
+				B49F423E2C3700F600F06455 /* OnboardingViewPresenter.swift in Sources */,
 				B49F422A2C36A73300F06455 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
