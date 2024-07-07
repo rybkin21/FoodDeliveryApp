@@ -40,6 +40,7 @@
 		B49F423E2C3700F600F06455 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */; };
 		B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */; };
 		B49F42432C3AAC0900F06455 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42422C3AAC0900F06455 /* UserStorage.swift */; };
+		B49F42462C3AB0E200F06455 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42452C3AB0E200F06455 /* SceneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 		B49F42422C3AAC0900F06455 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		B49F42452C3AB0E200F06455 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		B49F42392C36FFDC00F06455 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				B49F42442C3AB0C600F06455 /* SceneFactory */,
 				B49F423C2C3700B200F06455 /* Onboarding */,
 			);
 			path = UILayer;
@@ -227,6 +230,14 @@
 				B49F42422C3AAC0900F06455 /* UserStorage.swift */,
 			);
 			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
+		B49F42442C3AB0C600F06455 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42452C3AB0E200F06455 /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				B49F42382C36B99200F06455 /* TabBarController.swift in Sources */,
 				B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */,
 				B49F42432C3AAC0900F06455 /* UserStorage.swift in Sources */,
+				B49F42462C3AB0E200F06455 /* SceneFactory.swift in Sources */,
 				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
 				B49F423E2C3700F600F06455 /* OnboardingViewPresenter.swift in Sources */,
 				B49F422A2C36A73300F06455 /* Coordinator.swift in Sources */,
