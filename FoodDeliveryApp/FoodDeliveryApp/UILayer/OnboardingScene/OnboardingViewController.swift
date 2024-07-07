@@ -103,7 +103,7 @@ private extension OnboardingViewController {
     func setupButton() {
         view.addSubview(bottomButton)
         bottomButton.translatesAutoresizingMaskIntoConstraints = false
-        bottomButton.backgroundColor = AppColors.gray
+        bottomButton.backgroundColor = AppColors.grey
         bottomButton.titleLabel?.font = .Roboto.bold.size(of: 18)
         bottomButton.setTitleColor(AppColors.black, for: .normal)
         bottomButton.layer.cornerRadius = 24

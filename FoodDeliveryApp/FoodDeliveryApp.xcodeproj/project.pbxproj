@@ -41,6 +41,8 @@
 		B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */; };
 		B49F42432C3AAC0900F06455 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42422C3AAC0900F06455 /* UserStorage.swift */; };
 		B49F42462C3AB0E200F06455 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42452C3AB0E200F06455 /* SceneFactory.swift */; };
+		B49F42492C3AED9000F06455 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F42482C3AED9000F06455 /* LoginViewController.swift */; };
+		B49F424E2C3AEE6700F06455 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F424D2C3AEE6700F06455 /* BottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 		B49F42422C3AAC0900F06455 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		B49F42452C3AB0E200F06455 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		B49F42482C3AED9000F06455 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B49F424D2C3AEE6700F06455 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,20 +212,21 @@
 		B49F42392C36FFDC00F06455 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				B49F42472C3AED5100F06455 /* AuthScene */,
 				B49F42442C3AB0C600F06455 /* SceneFactory */,
-				B49F423C2C3700B200F06455 /* Onboarding */,
+				B49F423C2C3700B200F06455 /* OnboardingScene */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
 		};
-		B49F423C2C3700B200F06455 /* Onboarding */ = {
+		B49F423C2C3700B200F06455 /* OnboardingScene */ = {
 			isa = PBXGroup;
 			children = (
 				B49F423A2C37008F00F06455 /* OnboardingViewController.swift */,
 				B49F423F2C3835C700F06455 /* OnboardingPartViewController.swift */,
 				B49F423D2C3700F600F06455 /* OnboardingViewPresenter.swift */,
 			);
-			path = Onboarding;
+			path = OnboardingScene;
 			sourceTree = "<group>";
 		};
 		B49F42412C3AABEC00F06455 /* ServicesLayer */ = {
@@ -238,6 +243,39 @@
 				B49F42452C3AB0E200F06455 /* SceneFactory.swift */,
 			);
 			path = SceneFactory;
+			sourceTree = "<group>";
+		};
+		B49F42472C3AED5100F06455 /* AuthScene */ = {
+			isa = PBXGroup;
+			children = (
+				B49F424C2C3AEE4000F06455 /* Presenters */,
+				B49F424B2C3AEE3400F06455 /* Controllers */,
+				B49F424A2C3AEE2900F06455 /* Views */,
+			);
+			path = AuthScene;
+			sourceTree = "<group>";
+		};
+		B49F424A2C3AEE2900F06455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B49F424D2C3AEE6700F06455 /* BottomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B49F424B2C3AEE3400F06455 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B49F42482C3AED9000F06455 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B49F424C2C3AEE4000F06455 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +369,7 @@
 				B49F422C2C36AB9800F06455 /* AppCoordinator.swift in Sources */,
 				B49F42322C36B93600F06455 /* OrderCoordinator.swift in Sources */,
 				B49F423B2C37009000F06455 /* OnboardingViewController.swift in Sources */,
+				B49F42492C3AED9000F06455 /* LoginViewController.swift in Sources */,
 				B49F41EF2C3466BE00F06455 /* SceneDelegate.swift in Sources */,
 				B49F42362C36B96900F06455 /* ProfileCoordinator.swift in Sources */,
 				B49F42342C36B94F00F06455 /* ListCoordinator.swift in Sources */,
@@ -340,6 +379,7 @@
 				B49F42432C3AAC0900F06455 /* UserStorage.swift in Sources */,
 				B49F42462C3AB0E200F06455 /* SceneFactory.swift in Sources */,
 				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
+				B49F424E2C3AEE6700F06455 /* BottomView.swift in Sources */,
 				B49F423E2C3700F600F06455 /* OnboardingViewPresenter.swift in Sources */,
 				B49F422A2C36A73300F06455 /* Coordinator.swift in Sources */,
 			);
