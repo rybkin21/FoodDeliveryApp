@@ -14,11 +14,8 @@ enum LoginViewState {
 }
 
 protocol LoginViewInput: AnyObject {
-    func onSignInTapped()
-    func onSignUpTapped()
-    func onFacebookTapped()
-    func onForgotTapped()
-    func onBackPressed()
+    func startLoader()
+    func stopLoader()
 }
 
 class LoginViewController: UIViewController {
@@ -43,8 +40,10 @@ class LoginViewController: UIViewController {
     private lazy var forgotLabel = UILabel()
     private lazy var signInButton = FDButton()
     private lazy var signUpButton = FDButton()
-
     private lazy var verticalStack = UIStackView()
+    private lazy var loader = UIActivityIndicatorView(style: .large)
+    private lazy var loaderConatiner = UIView()
+
 
 
     // MARK: - Constraints
@@ -116,6 +115,7 @@ private extension LoginViewController {
             setupForgorLabel()
             setupNavigationBar()
         }
+        setupLoaderView()
     }
 
     func setupNavigationBar() {
@@ -254,7 +254,8 @@ private extension LoginViewController {
             ])
         case .signIn:
             signInButton.setTitle("Sign In")
-
+            signInButton.action = onSignInTapped
+            
             NSLayoutConstraint.activate([
                 signInButton.topAnchor.constraint(equalTo: verticalStack.bottomAnchor, constant: 30),
                 signInButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 30),
@@ -334,11 +335,32 @@ private extension LoginViewController {
             signUpReEnterPass.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+
+    func setupLoaderView() {
+        view.addSubview(loaderConatiner)
+        loaderConatiner.translatesAutoresizingMaskIntoConstraints = false
+        loaderConatiner.backgroundColor = AppColors.black.withAlphaComponent(0.3)
+        loaderConatiner.isHidden = true
+
+        NSLayoutConstraint.activate([
+            loaderConatiner.widthAnchor.constraint(equalTo: view.widthAnchor),
+            loaderConatiner.heightAnchor.constraint(equalTo: view.heightAnchor)
+        ])
+
+        loaderConatiner.addSubview(loader)
+        loader.translatesAutoresizingMaskIntoConstraints = false
+        loader.isHidden = true
+
+        NSLayoutConstraint.activate([
+            loader.centerXAnchor.constraint(equalTo: loaderConatiner.centerXAnchor),
+            loader.centerYAnchor.constraint(equalTo: loaderConatiner.centerYAnchor)
+        ])
+    }
 }
 
-// MARK: - LoginViewInput delegate
+// MARK: - Private methods
 
-extension LoginViewController: LoginViewInput {
+private extension LoginViewController {
     
     func onSignInTapped() {
         switch state {
@@ -346,12 +368,13 @@ extension LoginViewController: LoginViewInput {
         case .initial:
             viewOutput?.goToSignIn()
         case .signIn:
-            return
+            print(#function)
+            viewOutput?.loginStart(login: signInUsername.text ?? "", password: signInPassword.text ?? "")
         case .signUp:
             return
         }
     }
-    
+
     func onSignUpTapped() {
         switch state {
 
@@ -363,12 +386,12 @@ extension LoginViewController: LoginViewInput {
             return
         }
     }
-    
+
     func onFacebookTapped() {
 
     }
 
-    
+
     func onForgotTapped() {
 
     }
@@ -376,6 +399,23 @@ extension LoginViewController: LoginViewInput {
     func onBackPressed() {
 
     }
+}
+
+// MARK: - LoginViewInput delegate
+
+extension LoginViewController: LoginViewInput {
+    func startLoader() {
+        loaderConatiner.isHidden = false
+        loader.startAnimating()
+    }
+    
+    func stopLoader() {
+        loaderConatiner.isHidden = true
+        loader.stopAnimating()
+    }
+    
+    
+
 }
 
 // MARK: - Observers
