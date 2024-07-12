@@ -10,6 +10,7 @@
 		B4037DD22C3D40C500D6B003 /* FDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4037DD12C3D40C500D6B003 /* FDButton.swift */; };
 		B4037DD42C3D5AF800D6B003 /* FDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4037DD32C3D5AF800D6B003 /* FDTextField.swift */; };
 		B4037DD62C3D649400D6B003 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4037DD52C3D649400D6B003 /* LoginPresenter.swift */; };
+		B4293F242C419478007157BC /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F232C419478007157BC /* LoginCoordinator.swift */; };
 		B49F41ED2C3466BE00F06455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F41EC2C3466BE00F06455 /* AppDelegate.swift */; };
 		B49F41EF2C3466BE00F06455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F41EE2C3466BE00F06455 /* SceneDelegate.swift */; };
 		B49F41F12C3466BE00F06455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F41F02C3466BE00F06455 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		B4037DD12C3D40C500D6B003 /* FDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDButton.swift; sourceTree = "<group>"; };
 		B4037DD32C3D5AF800D6B003 /* FDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTextField.swift; sourceTree = "<group>"; };
 		B4037DD52C3D649400D6B003 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B4293F232C419478007157BC /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		B49F41E92C3466BE00F06455 /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49F41EC2C3466BE00F06455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49F41EE2C3466BE00F06455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				B49F42312C36B93600F06455 /* OrderCoordinator.swift */,
 				B49F42332C36B94F00F06455 /* ListCoordinator.swift */,
 				B49F42352C36B96900F06455 /* ProfileCoordinator.swift */,
+				B4293F232C419478007157BC /* LoginCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				B49F42382C36B99200F06455 /* TabBarController.swift in Sources */,
 				B4037DD62C3D649400D6B003 /* LoginPresenter.swift in Sources */,
 				B49F42402C3835C700F06455 /* OnboardingPartViewController.swift in Sources */,
+				B4293F242C419478007157BC /* LoginCoordinator.swift in Sources */,
 				B49F42432C3AAC0900F06455 /* UserStorage.swift in Sources */,
 				B49F42462C3AB0E200F06455 /* SceneFactory.swift in Sources */,
 				B49F42232C35A78700F06455 /* UIColor+Extension.swift in Sources */,
