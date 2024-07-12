@@ -167,8 +167,12 @@ private extension LoginViewController {
         view.addSubview(bottomView)
         bottomView.translatesAutoresizingMaskIntoConstraints = false
 
-        bottomView.button2Action = facebookPress
-        bottomView.button1Action = googlePress
+        bottomView.button2Action = { [weak self] in
+            self?.facebookPress()
+        }
+        bottomView.button1Action = { [weak self] in
+            self?.googlePress()
+        }
 
         NSLayoutConstraint.activate([
             bottomView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
@@ -244,7 +248,9 @@ private extension LoginViewController {
         switch state {
         case .initial:
             signInButton.setTitle("Sign In")
-            signInButton.action = onSignInTapped
+            signInButton.action = { [weak self] in
+                self?.onSignInTapped()
+            }
 
             NSLayoutConstraint.activate([
                 signInButton.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 60),
@@ -254,8 +260,10 @@ private extension LoginViewController {
             ])
         case .signIn:
             signInButton.setTitle("Sign In")
-            signInButton.action = onSignInTapped
-            
+            signInButton.action = { [weak self] in
+                self?.onSignInTapped()
+            }
+
             NSLayoutConstraint.activate([
                 signInButton.topAnchor.constraint(equalTo: verticalStack.bottomAnchor, constant: 30),
                 signInButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 30),
@@ -280,7 +288,9 @@ private extension LoginViewController {
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.setTitle("Sign Up")
         signUpButton.scheme = .grey
-        signUpButton.action = onSignUpTapped
+        signUpButton.action = { [weak self] in
+            self?.onSignUpTapped()
+        }
 
         NSLayoutConstraint.activate([
             signUpButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 20),
